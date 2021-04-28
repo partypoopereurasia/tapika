@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*
+** Tab Section Style Start
+*/
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-controller {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url('https://dl.dropboxusercontent.com/s/us5iwm8gnezmqa9/heading-bg.gif');
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-controller label {
+  color: white;
+  cursor: pointer;
+  flex: 1;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 15px;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+#tapikastore_custom_template__tab-about:checked~.tapikastore_custom_template__tab-controller label[for=tapikastore_custom_template__tab-about],
+#tapikastore_custom_template__tab-payment:checked~.tapikastore_custom_template__tab-controller label[for=tapikastore_custom_template__tab-payment],
+#tapikastore_custom_template__tab-shipping:checked~.tapikastore_custom_template__tab-controller label[for=tapikastore_custom_template__tab-shipping],
+#tapikastore_custom_template__tab-returns:checked~.tapikastore_custom_template__tab-controller label[for=tapikastore_custom_template__tab-returns],
+#tapikastore_custom_template__tab-warning:checked~.tapikastore_custom_template__tab-controller label[for=tapikastore_custom_template__tab-warning] {
+  background-color: #0099cc;
+  background-image: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content {
+  display: none;
+  font-size: 14px;
+  line-height: 1.75;
+  padding: 20px 15px;
+  border: 1px solid lightgrey;
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content * {
+  color: #252525;
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content *:first-child {
+  margin-top: 0;
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content * {
+  margin-bottom: 0;
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content ol {
+  list-style: decimal-leading-zero;
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content dl,
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content ul {
+  list-style: '\2714\0020';
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content dl,
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content ol,
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content ul {
+  padding-left: 20px;
+}
+
+#tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-content li {
+  padding-bottom: 10px;
+}
+
+#tapikastore_custom_template__tab-about:checked~.tapikastore_custom_template__tab-content-wrapper #tapikastore_custom_template__tab-content-about,
+#tapikastore_custom_template__tab-payment:checked~.tapikastore_custom_template__tab-content-wrapper #tapikastore_custom_template__tab-content-payment,
+#tapikastore_custom_template__tab-shipping:checked~.tapikastore_custom_template__tab-content-wrapper #tapikastore_custom_template__tab-content-shipping,
+#tapikastore_custom_template__tab-returns:checked~.tapikastore_custom_template__tab-content-wrapper #tapikastore_custom_template__tab-content-returns,
+#tapikastore_custom_template__tab-warning:checked~.tapikastore_custom_template__tab-content-wrapper #tapikastore_custom_template__tab-content-warning {
+  display: block;
+}
+
+@media screen and ( max-width:575px) {
+  #tapikastore_custom_template__tab-wrapper .tapikastore_custom_template__tab-controller label {
+    flex: 0 0 100%;
+    background-color: black;
+    background-image: url('https://dl.dropboxusercontent.com/s/us5iwm8gnezmqa9/heading-bg.gif');
+  }
+}
+/*
+** Tab Section Style End
+*/

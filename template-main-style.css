@@ -1,0 +1,689 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+img {
+  max-width: 100% !important;
+}
+
+#tapikastore_custom_template {
+  font-size: 14px;
+  line-height: 1.75;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+#tapikastore_custom_template * {
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__row {
+  display: flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* 
+** Header Style Start
+*/
+#tapikastore_custom_template .tapikastore_custom_template__template-header {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 10px 0 10px 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-header-inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__logo-holder {
+  padding: 15px;
+  text-align: center;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__logo-holder a {
+  display: block;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__logo-holder img {
+  max-height: 100px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-right {
+  padding: 15px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-right ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-right ul li {
+  display: block;
+  float: left;
+  padding: 0 15px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-right ul li:first-child {
+  padding-left: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-right ul li:last-child {
+  padding-right: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-links {
+  padding-top: 10px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-links ul {
+  margin-right: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__navigation-links a {
+  color: black;
+  display: block;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__navigation-links a:hover {
+  color: #0099cc;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__navigation-links a::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #0099cc;
+  position: absolute;
+  top: 7px;
+  right: -18px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__navigation-links a::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #0099cc;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-out;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__navigation-links li:hover a::before {
+  width: 100%;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__navigation-links li:last-child a::after {
+  display: none;
+}
+
+#tapikastore_custom_template #tapikastore_custom_template__header-space {
+  display: block;
+  height: 30px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-promo {
+  padding-bottom: 10px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__header-promo span {
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: black;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 40px;
+}
+
+#tapikastore_custom_template #tapikastore_custom_template__promo-free-shipping {
+  background-image: url('https://dl.dropboxusercontent.com/s/ntoleet5kqz4srh/promo-free-shipping.png');
+}
+
+#tapikastore_custom_template #tapikastore_custom_template__promo-money-back {
+  background-image: url('https://dl.dropboxusercontent.com/s/6s6ss0n8w5tii95/promo-money-back.png');
+}
+
+#tapikastore_custom_template #tapikastore_custom_template__promo-online-support {
+  background-image: url('https://dl.dropboxusercontent.com/s/27x4uqjs0qq7n1k/promo-online-support.png');
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-header-menu {
+  display: none;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 15px 30px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-header-menu-wrapper {
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 3px #E5E5E5;
+  width: 220px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-header-menu-wrapper > label {
+  background-image: url('https://dl.dropboxusercontent.com/s/iys700aalycxgrt/menu-open.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px 30px 10px 15px;
+  text-transform: uppercase;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-header-menu-wrapper > input:checked + label {
+  background-image: url('https://dl.dropboxusercontent.com/s/ycxpk959wta89jn/menu-close.png');
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-header-menu-wrapper > input:checked ~ .tapikastore_custom_template__template_menu_content {
+  height: auto;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_links li {
+  border-top: 1px solid lightgrey;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_single:not(:last-child) > .tapikastore_custom_template__template_menu_content_links li:last-child {
+  border-bottom: 1px solid lightgrey;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_links a {
+  color: #333333;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 5px 5px 5px 15px;
+  text-decoration: none !important;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_links a:hover {
+  background-image: url('https://dl.dropboxusercontent.com/s/er0eteblfwet0fw/hover-bg.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #0099cc;
+  color: white !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_links a.sub_cat {
+  color: #757575;
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding-left: 30px;
+  position: relative;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_links a.sub_cat::before {
+  content: '';
+  width: 7px;
+  height: 2px;
+  background-color: #616161;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  transition: all 0.3s ease-out;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template_menu_content_links a.sub_cat:hover::before {
+  background-color: white;
+}
+
+
+@media screen and ( max-width:1200px) {
+  #tapikastore_custom_template .tapikastore_custom_template__template-header-inner {
+    justify-content: center;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__header-right {
+    flex: 0 0 100%;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__header-links,
+  #tapikastore_custom_template #tapikastore_custom_template__header-space {
+    display: none;
+  }
+}
+
+@media screen and ( max-width:992px) {
+  #tapikastore_custom_template .tapikastore_custom_template__header-promo {
+    padding-bottom: 0;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__header-promo ul li:last-child {
+    display: none;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__header-promo ul li:nth-last-child(2) {
+    padding-right: 0;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__template-header-menu {
+    display: flex;
+  }
+}
+
+@media screen and ( max-width:600px) {
+  #tapikastore_custom_template .tapikastore_custom_template__header-right {
+    flex: 0 0 auto;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__header-promo ul li {
+    display: block !important;
+    float: none;
+    padding: 0 15px 15px !important;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__template-header-menu {
+    justify-content: center;
+  }
+}
+/* 
+** Header Style End
+*/
+
+/* 
+** Main Body Style Start
+*/
+#tapikastore_custom_template .tapikastore_custom_template__template-main-body {
+  padding: 15px 0;
+}
+
+/* 
+** Left Panel Style Start
+*/
+#tapikastore_custom_template .tapikastore_custom_template__body-left-panel {
+  padding: 15px;
+  width: 250px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-wrapper {
+  margin-bottom: 20px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-heading {
+  background-image: url('https://dl.dropboxusercontent.com/s/us5iwm8gnezmqa9/heading-bg.gif');
+  color: white;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links {
+  background: white;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links ul li {
+  display: block;
+  border-bottom: 1px solid #0099cc;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links ul li a {
+  background: #F5F5F5;
+  color: #616161;
+  display: block;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 0 1px;
+  font-size: 13px;
+  font-weight: 600;
+  overflow: hidden;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 15px;
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+  position: relative;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links ul li a:hover {
+  background-image: url('https://dl.dropboxusercontent.com/s/er0eteblfwet0fw/hover-bg.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #0099cc;
+  color: white !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links ul li a.sub_cat {
+  color: #757575;
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding-left: 30px;
+  position: relative;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links ul li a.sub_cat::before {
+  content: '';
+  width: 7px;
+  height: 2px;
+  background-color: #616161;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  transition: all 0.3s ease-out;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__panel-links ul li a.sub_cat:hover::before {
+  background-color: white;
+}
+
+#tapikastore_custom_template #tapikastore_custom_template__product-portfolio-left {
+  display: none;
+}
+
+/* Store Newsletter Start */
+#tapikastore_custom_template .tapikastore_custom_template__store-newsletter {
+  background-color: #0099cc;
+  padding: 30px 15px 20px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__store-newsletter h4 {
+  background-image: url('https://dl.dropboxusercontent.com/s/0a7u0uzf55uloq3/store-newsletter.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  min-height: 40px;
+  margin: 0 0 20px;
+  padding: 0 0 0 60px;
+  text-transform: uppercase;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__store-newsletter p {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 0 20px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__store-newsletter a {
+  background-color: black;
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 0 0 auto;
+  padding: 5px;
+  width: 100px;
+}
+/* Store Newletter End */
+
+/* Expert Support Start */
+#tapikastore_custom_template .tapikastore_custom_template__expert-support {
+  background: #F5F5F5;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__expert-support a {
+  display: block;
+  padding: 15px 15px 15px 80px;
+  border: 1px solid lightgrey;
+  text-decoration: none;
+  background-image: url('https://dl.dropboxusercontent.com/s/q9xcxufjiuc2hcf/chat.png');
+  background-repeat: no-repeat;
+  background-position: top 10px left 10px;
+  transition: all 0.3s ease-out;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__expert-support a:hover {
+  border-color: #0099cc;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__expert-support h5 {
+  font-size: 18px;
+  margin: 0;
+  line-height: 30px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__expert-support p {
+  margin: 0;
+  line-height: 20px;
+}
+
+/* Expert Support End */
+#tapikastore_custom_template .tapikastore_custom_template__body-panel {
+  padding: 0 15px;
+  width: calc( 100% - 250px);
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__body-center-panel {
+  padding: 15px;
+  width: calc( 100% - 250px);
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-title h1 {
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content {
+  border: 1px solid lightgrey;
+  padding: 20px 15px;
+  position: relative;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content * {
+  color: #252525 !important;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content *:first-child {
+  margin-top: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content *:last-child {
+  margin-bottom: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content ol {
+  list-style: decimal-leading-zero;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content dl,
+#tapikastore_custom_template .tapikastore_custom_template__template-content ul {
+  list-style: '\2714\0020';
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content dl,
+#tapikastore_custom_template .tapikastore_custom_template__template-content ol,
+#tapikastore_custom_template .tapikastore_custom_template__template-content ul {
+  padding-left: 20px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content li {
+  padding-bottom: 5px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content-why-buy {
+  margin-bottom: 0 !important;
+  padding-right: 100px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content-icon {
+  display: block;
+  width: 87px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-content-icon img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__body-right-panel {
+  padding: 15px;
+  width: 250px;
+}
+
+@media screen and ( max-width:1199px) {
+  #tapikastore_custom_template .tapikastore_custom_template__body-center-panel {
+    width: 100%;
+  }
+  #tapikastore_custom_template #tapikastore_custom_template__product-portfolio-left {
+    display: block;
+  }
+  #tapikastore_custom_template #tapikastore_custom_template__product-portfolio-right {
+    display: none;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__body-right-panel {
+    width: 100%;
+  }
+}
+
+@media screen and ( max-width:992px) {
+  #tapikastore_custom_template .tapikastore_custom_template__container {
+    max-width: 768px;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__body-left-panel {
+    display: none;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__body-panel {
+    width: 100%;
+  }
+}
+
+@media screen and ( max-width:575px) {
+  #tapikastore_custom_template .tapikastore_custom_template__template-content-why-buy {
+    padding-right: 0;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__template-content-icon {
+    width: 100%;
+    margin-top: 20px;
+    position: static;
+  }
+}
+/* 
+** Main Body Style End
+*/
+
+/* 
+** Footer Style Start
+*/
+#tapikastore_custom_template .tapikastore_custom_template__template-footer {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 10px 0 10px 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__template-footer-inner {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__footer-left {
+  padding: 15px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__footer-links {
+  padding-bottom: 15px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__footer-links ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__footer-links ul li {
+  display: block;
+  float: left;
+  padding: 0 15px;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__footer-links ul li:first-child {
+  padding-left: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__footer-links ul li:last-child {
+  padding-right: 0;
+}
+
+#tapikastore_custom_template .tapikastore_custom_template__footer-copyright {
+  padding: 10px 0;
+}
+
+@media screen and ( max-width:767px) {
+  #tapikastore_custom_template .tapikastore_custom_template__template-footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__footer-left {
+    order: 1;
+    flex: 0 0 100%;
+    padding-top: 0;
+  }
+  #tapikastore_custom_template .tapikastore_custom_template__footer-links {
+    display: none;
+  }
+}
+/* 
+** Footer Style End
+*/
